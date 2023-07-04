@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+    <div class="col-sm-12 col-md-12 justify-content-center bg-secondary-subtle">
+      <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+        <div class="container-fluid">
+          <h1 class="navbar-brand text-warning font-weight-900" href="http://127.0.0.1:5500/index.html">
+            <span style="font-weight:bolder; font-size: larger; "> Library <img src="icon.png" alt=""></span> 
+          </h1>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-warning text-warning" value="Menu"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/About_us.html"
+                  >Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/about-us.html"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/sign-up.html"
+                  >Sign-up</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-warning"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Log-in
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/admin-login.html"
+                      >Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/student-login.html"
+                      >Student</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Action</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 border-warning"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-warning text-warning border-warning"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.gtc.ox.ac.uk/wp-content/uploads/2019/09/Green_Templeton_College_by_John_Cairns_24.5.18-74-1280x855.jpg"
+              height="500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-light">
+              <h5>CDAC Library</h5>
+              <p>"THINK BEFORE YOU SPEAK. READ BEFORE YOU THINK."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.durham.ac.uk/media/durham-university/colleges/trevelyan-college/Library-1.jpg"
+              height="500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>CITY LIBRARY</h5>
+              <p>"A ROOM WITHOUT BOOKS IS LIKE A BODY WITHOUT A SOUL".</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://libraries.colby.edu/wp-content/uploads/2015/06/WEB_P9B7555_edit.jpg"
+              height="500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Sharing Thought</h5>
+              <p>"FICTION REVEALS TRUTHS THAT REALITY OBSCURES".</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <h3 class="ms-3">Recommended Books 📚</h3>
+      <div class="row ms-3">
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://m.media-amazon.com/images/I/513J3iCksDL._SL500_.jpg"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: Python Programming</h6> 
+                <h6>Author: Adam Bash.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://m.media-amazon.com/images/I/51HToyu8AkL._SX347_BO1,204,203,200_.jpg"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: Let us C</h6> 
+                <h6>Author: Yashvant Kanetkar.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://m.media-amazon.com/images/I/41EvWZWXi-S.jpg"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: JAVA back-end programming</h6> 
+                <h6>Author: Andy Vickler.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQ-9hjJ9PoBwCQ3VEj1ktVRNcrZ0EadZefw&usqp=CAU"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: C++ programming</h6> 
+                <h6>Author: Ryan Turner.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-0366-7"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: Database Design</h6> 
+                <h6>Author: Clares Churcher.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://m.media-amazon.com/images/I/51iceifqDHL._SL500_.jpg"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: Langauge of SQL</h6> 
+                <h6>Author: Phil Hack.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://d29xot63vimef3.cloudfront.net/image/programming-books/203-9.jpg"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: C# Programming</h6> 
+                <h6>Author: Anndy Maris.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://josipmisko.com/img/books/The-Road-to-React.jpg"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Title: The Road to React</h6> 
+                <h6>Author: Robin Weiruch.</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!DOCTYPE html>
+<html lang="en">
+
+
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+      <section class="mb-4">
+          <p  style= " font-size :xx-large" >
+              CDAC Institute Library, Mumbai
+          </p>
+        </section>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+
+</html>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2023 College Library. All rights reserved.</p>
+    </footer>
+  
+  </body>
+</html>

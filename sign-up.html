@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Library Signup</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+
+  <style>
+    .error-message {
+      color: red;
+    }
+  </style>
+</head>
+
+<body class="bg-secondary-subtle">
+    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+        <div class="container-fluid">
+          <h1 class="navbar-brand text-warning font-weight-900" href="http://127.0.0.1:5500/index.html">
+            <span style="font-weight:bolder; font-size: larger; "> Library <img src="icon.png" alt=""></span> 
+          </h1>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-warning text-warning" value="Menu"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/About_us.html"
+                  >Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/about-us.html"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/sign-up.html"
+                  >Sign-up</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-warning"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Log-in
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/admin-login.html"
+                      >Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/student-login.html"
+                      >Student</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Action</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 border-warning"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-warning text-warning border-warning"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="row justify-content-center align-items-center" >
+    <div class="col-sm-10 col-md-6 mb-3">    
+    <div class="container mt-5 bg-light" style="padding: 2vh;">
+    <h2 class="text-warning bg-dark p-2" style="border-radius: 10px; text-align: center;">Sign-up Form</h2>
+    <form id="signup-form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="error-message" id="name-error"></div>
+      </div>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" required>
+        <div class="error-message" id="username-error"></div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="error-message" id="email-error"></div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" required>
+        <div class="error-message" id="password-error"></div>
+      </div>
+      <div class="mb-3">
+        <label for="college-id" class="form-label">College ID</label>
+        <input type="text" class="form-control" id="college-id" required>
+        <div class="error-message" id="college-id-error"></div>
+      </div>
+      <button type="submit" class="btn btn-warning">Sign Up</button>
+    </form>
+  </div>
+  </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const form = document.getElementById('signup-form');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      clearErrors();
+
+      if (!validateName()) {
+        showError('name', 'Name must contain only letters');
+      }
+
+      if (!validateUsername()) {
+        showError('username', 'Username must contain only letters and numbers');
+      }
+
+      if (!validateEmail()) {
+        showError('email', 'Invalid email format');
+      }
+
+      if (!validatePassword()) {
+        showError('password', 'Password must be at least 8 characters long');
+      }
+
+      if (!validateCollegeId()) {
+        showError('college-id', 'College ID must contain only numeric values');
+      }
+
+      // If all validations pass, you can proceed with form submission
+      // You can add your own logic here
+
+    });
+
+    function validateName() {
+      const nameInput = document.getElementById('name');
+      const nameRegex = /^[a-zA-Z ]+$/;
+      return nameRegex.test(nameInput.value);
+    }
+
+    function validateUsername() {
+      const usernameInput = document.getElementById('username');
+      const usernameRegex = /^[a-zA-Z0-9]+$/;
+      return usernameRegex.test(usernameInput.value);
+    }
+
+    function validateEmail() {
+      const emailInput = document.getElementById('email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(emailInput.value);
+    }
+
+    function validatePassword() {
+      const passwordInput = document.getElementById('password');
+      const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+      return passwordInput.value.length >= 8;
+    }
+
+    function validateCollegeId() {
+      const collegeIdInput = document.getElementById('college-id');
+      const collegeIdRegex = /^[a-zA-Z0-9]+$/;
+      return collegeIdRegex.test(collegeIdInput.value);
+    }
+
+    function showError(inputId, errorMessage) {
+      const errorElement = document.getElementById(`${inputId}-error`);
+      errorElement.textContent = errorMessage;
+    }
+
+    function clearErrors() {
+      const errorMessages = document.querySelectorAll('.error-message');
+      errorMessages.forEach(function(error) {
+        error.textContent = '';
+      });
+    }
+  </script>
+
+  
+</body>
+
+</html>
